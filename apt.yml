@@ -1,0 +1,12 @@
+# 2022-08-31 - apt.yml
+---
+
+- hosts: localhost
+  tasks:
+  - name: Install ipcalc
+    become: yes
+    apt: 
+      pkg: 
+        - ipcalc
+        - neofetch
+
