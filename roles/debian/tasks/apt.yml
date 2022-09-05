@@ -1,0 +1,9 @@
+# 2022-09-05 - apt.yml
+
+- name: Instalación de paquetes
+  become: yes
+  apt: 
+    pkg: 
+      - aptitude
+      - ipcalc
+      - neofetch
